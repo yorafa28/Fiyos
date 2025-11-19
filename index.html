@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Domain - Materi & Hosting</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Domain dan Hosting</h1></header>
+
+  <nav>
+    <a href="index.html" class="active">Domain</a>
+    <a href="hosting.html">Hosting</a>
+    <a href="ekstensi.html">Ekstensi</a>
+    <a href="layanan.html">Layanan</a>
+  </nav>
+
+  <div class="container">
+    <h2>Pengertian Domain</h2>
+    <img src="domain bre.jpg" alt="Ilustrasi Domain">
+    <p><strong>Domain</strong> adalah alamat unik yang digunakan untuk mengakses sebuah website di internet. Misalnya <em>www.google.com</em> atau <em>www.wikipedia.org</em>.</p>
+    <h3>Fungsi Domain</h3>
+    <ul>
+      <li>Memudahkan pengguna mengingat alamat website</li>
+      <li>Merepresentasikan identitas atau merek di internet</li>
+      <li>Menggambarkan profesionalitas sebuah bisnis online</li>
+    </ul>
+    <h3>Contoh Domain</h3>
+    <p>Contoh domain populer: <em>google.com</em>, <em>tokopedia.com</em>, <em>kemdikbud.go.id</em>.</p>
+  </div>
+
+  <script>
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.body.classList.add('fade-out');
+        setTimeout(() => { window.location.href = this.href; }, 300);
+      });
+    });
+  </script>
+</body>
+</html>

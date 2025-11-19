@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Layanan Hosting & Domain</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Domain dan Hosting</h1></header>
+
+  <nav>
+    <a href="index.html">Domain</a>
+    <a href="hosting.html">Hosting</a>
+    <a href="ekstensi.html">Ekstensi</a>
+    <a href="layanan.html" class="active">Layanan</a>
+  </nav>
+
+  <div class="container">
+    <h2>Layanan Penyedia Hosting & Domain</h2>
+    <img src="layanan bre.jfif" alt="Penyedia Hosting">
+    <p>Banyak penyedia layanan hosting dan domain yang menawarkan berbagai paket sesuai kebutuhan website.</p>
+    <h3>Contoh Penyedia Layanan</h3>
+    <ul>
+      <li>Niagahoster</li>
+      <li>Hostinger</li>
+      <li>Domainesia</li>
+      <li>Rumahweb</li>
+      <li>Google Domains</li>
+    </ul>
+  </div>
+
+  <script>
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.body.classList.add('fade-out');
+        setTimeout(() => { window.location.href = this.href; }, 300);
+      });
+    });
+  </script>
+</body>
+</html>

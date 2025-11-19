@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Ekstensi Domain</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Domain dan Hosting</h1></header>
+
+  <nav>
+    <a href="index.html">Domain</a>
+    <a href="hosting.html">Hosting</a>
+    <a href="ekstensi.html" class="active">Ekstensi</a>
+    <a href="layanan.html">Layanan</a>
+  </nav>
+
+  <div class="container">
+    <h2>Ekstensi Domain dan Jenisnya</h2>
+    <img src="Ekstensi bre.webp" alt="Ekstensi Domain">
+    <p><strong>Ekstensi domain</strong> adalah akhiran pada alamat website, seperti <em>.com</em>, <em>.org</em>, atau <em>.id</em>. Setiap ekstensi memiliki arti dan fungsi tersendiri.</p>
+    <h3>Jenis Ekstensi Domain</h3>
+    <ul>
+      <li><strong>.com</strong> – Komersial</li>
+      <li><strong>.org</strong> – Organisasi non-profit</li>
+      <li><strong>.net</strong> – Jaringan atau teknologi</li>
+      <li><strong>.id</strong> – Indonesia</li>
+      <li><strong>.edu</strong> – Pendidikan</li>
+    </ul>
+  </div>
+
+  <script>
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.body.classList.add('fade-out');
+        setTimeout(() => { window.location.href = this.href; }, 300);
+      });
+    });
+  </script>
+</body>
+</html>

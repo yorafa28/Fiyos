@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Hosting - Materi & Domain</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Domain dan Hosting</h1></header>
+
+  <nav>
+    <a href="index.html">Domain</a>
+    <a href="hosting.html" class="active">Hosting</a>
+    <a href="ekstensi.html">Ekstensi</a>
+    <a href="layanan.html">Layanan</a>
+  </nav>
+
+  <div class="container">
+    <h2>Pengertian Hosting</h2>
+    <img src="hosting bre.jpg" alt="Server Hosting">
+    <p><strong>Hosting</strong> adalah layanan penyimpanan data website agar dapat diakses melalui internet. Semua file website seperti gambar, teks, dan database disimpan di server hosting.</p>
+    <h3>Fungsi Hosting</h3>
+    <ul>
+      <li>Menyimpan file website agar dapat diakses publik</li>
+      <li>Menjaga kinerja dan kecepatan website</li>
+      <li>Menyediakan keamanan data pengguna</li>
+    </ul>
+    <h3>Jenis-jenis Hosting</h3>
+    <p>Contohnya: Shared Hosting, VPS, Cloud Hosting, Dedicated Server.</p>
+  </div>
+
+  <script>
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.body.classList.add('fade-out');
+        setTimeout(() => { window.location.href = this.href; }, 300);
+      });
+    });
+  </script>
+</body>
+</html>

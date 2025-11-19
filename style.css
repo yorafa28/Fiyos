@@ -1,0 +1,67 @@
+/* === Gaya Umum === */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+  transition: opacity 0.6s ease; /* animasi perpindahan */
+}
+
+
+header {
+  background: #2b7cff;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: #004aad;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: #1e6ae1;
+}
+
+/* Penanda menu aktif */
+nav a.active {
+  background: #ffb100;
+  color: #000;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+/* Efek animasi keluar-masuk halaman */
+.fade-out {
+  opacity: 0;
+}
+
+/* Tombol animasi */
+a {
+  cursor: pointer;
+}
